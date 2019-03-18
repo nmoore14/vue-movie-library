@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    navDrawer: false
+    navDrawer: false,
+    navCount: 0
   },
   mutations: {
     SET_NAVDRAWER: (state, navPayload) => {
