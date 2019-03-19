@@ -18,7 +18,7 @@ export default new Vuex.Store({
       }
     },
     RESET_NAV: (state) => {
-      state.navDrawer = true
+      state.navDrawer = false
     }
   },
   actions: {

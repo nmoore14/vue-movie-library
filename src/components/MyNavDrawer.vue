@@ -14,6 +14,17 @@ export default {
     ...mapState({
       drawer: state => state.navDrawer
     })
+  },
+  methods: {
+    ...mapMutations([ 'RESET_NAV' ]),
+    navReset() {
+      this.RESET_NAV();
+    }
+  },
+  updated() {
+    this.$on('input', function() {
+      this.navReset();
+    })
   }
 }
 </script>
