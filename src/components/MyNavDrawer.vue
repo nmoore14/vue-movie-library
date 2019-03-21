@@ -1,5 +1,11 @@
 <template>
-  <v-navigation-drawer v-model='drawer' absolute temporary></v-navigation-drawer>
+  <v-navigation-drawer 
+    v-model='drawer' 
+    absolute 
+    temporary
+    class="grey"
+    >
+  </v-navigation-drawer>
 </template>
 
 <script>
@@ -14,12 +20,6 @@ export default {
   },
   computed: {
     ...mapState([ 'navCount' ])
-  },
-  methods: {
-    ...mapMutations([ 'RESET_NAV' ]),
-    navReset () {
-      this.RESET_NAV()
-    }
   },
   watch: {
     navCount: function () {
