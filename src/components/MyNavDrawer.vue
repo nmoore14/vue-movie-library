@@ -28,6 +28,17 @@
         :key="index"
       >
         <div slot="header" class="title grey--text text--darken-4 font-weight-light">{{ top.title }}</div>
+        <v-list
+          dense
+          v-for="(item, index) in top.items"
+          :key="index"
+          class="pl-4"
+        >
+          <v-list-tile-content>
+            <v-list-tile-title class="title grey--text text--darken-4 font-weight-regular">{{ item.title }}</v-list-tile-title>
+            <p class="subheading grey--text text--darken-4 font-weight-light">Released: {{ item.releaseDate }}</p>
+          </v-list-tile-content>
+        </v-list>
       </v-expansion-panel-content>
     </v-expansion-panel>
 
@@ -46,7 +57,17 @@ export default {
       userTop: [
         {
           title: 'Recent',
-          icon: 'event'
+          icon: 'event',
+          items: [
+            {
+              title: 'Holes',
+              releaseDate: '4-11-2013'
+            },
+            {
+              title: 'Titan A.E.',
+              releaseDate: '6-16-2000'
+            }
+          ]
         },
         {
           title: 'Favorites',

@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar dense class='grey darken-4 grey--text text--lighten-3'>
+  <v-toolbar class='grey darken-4 grey--text text--lighten-3'>
     <v-toolbar-side-icon
       @click.stop='setNav()'
       class='cyan'
