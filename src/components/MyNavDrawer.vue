@@ -8,23 +8,23 @@ import { mapState, mapMutations } from 'vuex'
 export default {
   name: 'MyNavDrawer',
   data () {
-    return {}
+    return {
+      drawer: null
+    }
   },
   computed: {
-    ...mapState({
-      drawer: state => state.navDrawer
-    })
+    ...mapState([ 'navCount' ])
   },
   methods: {
     ...mapMutations([ 'RESET_NAV' ]),
-    navReset() {
-      this.RESET_NAV();
+    navReset () {
+      this.RESET_NAV()
     }
   },
-  updated() {
-    this.$on('input', function() {
-      this.navReset();
-    })
+  watch: {
+    navCount: function () {
+      this.drawer = !this.drawer
+    }
   }
 }
 </script>

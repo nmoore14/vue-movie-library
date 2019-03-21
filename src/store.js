@@ -10,12 +10,13 @@ export default new Vuex.Store({
   },
   mutations: {
     SET_NAVDRAWER: (state) => {
-      if (state.navDrawer === false) {
-        state.navDrawer = !state.navDrawer
-      } else {
-        state.navDrawer = false
-        this.RESET_NAV()
-      }
+      state.navCount++
+      // if (state.navDrawer === false) {
+      //   state.navDrawer = !state.navDrawer
+      // } else {
+      //   state.navDrawer = false
+      //   this.RESET_NAV()
+      // }
     },
     RESET_NAV: (state) => {
       state.navDrawer = false
