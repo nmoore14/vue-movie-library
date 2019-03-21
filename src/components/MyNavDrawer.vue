@@ -41,7 +41,25 @@
         </v-list>
       </v-expansion-panel-content>
     </v-expansion-panel>
-
+    <v-divider></v-divider>
+    <v-list>
+      <v-list-tile>
+        <v-list-tile-action>
+          <v-icon>videocam</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title class="title grey--text text--darken-4 font-weight-light">Genres</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+      <v-list-tile>
+        <v-list-tile-action>
+          <v-icon>group</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title class="title grey--text text--darken-4 font-weight-light">Actors/Actresses</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+    </v-list>
   </v-navigation-drawer>
 </template>
 
