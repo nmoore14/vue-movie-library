@@ -89,7 +89,17 @@ export default {
         },
         {
           title: 'Favorites',
-          icon: 'stars'
+          icon: 'stars',
+          items: [
+            {
+              title: 'Holes',
+              releaseDate: '4-11-2013'
+            },
+            {
+              title: 'Titan A.E.',
+              releaseDate: '6-16-2000'
+            }
+          ]
         }
       ]
     }
